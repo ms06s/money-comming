@@ -1,7 +1,7 @@
 <template>
-  <div>Statistics.vue
-    <Nav></Nav>
-  </div>
+  <Layout>
+    <p>Statistics.Vue</p>
+  </Layout>
 </template>
 
 <script lang="ts">
