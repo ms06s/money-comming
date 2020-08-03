@@ -6,7 +6,7 @@
     <ul class="current">
       <li v-for="tag in dataSource" :key="tag.id"
           :class="{selected: selectedTags.indexOf(tag)>=0}"
-          @click="toggle(tag)">{{ tag.name }}
+          @click="toggle(tag)">{{tag.name}}
       </li>
     </ul>
   </div>
@@ -18,7 +18,7 @@ import {Component, Prop} from 'vue-property-decorator';
 
 @Component
 export default class Tags extends Vue {
-  @Prop() readonly dataSource: string[] | undefined;
+  @Prop({required: true}) readonly dataSource!: string[];
   selectedTags: string[] = [];
 
   toggle(tag: string) {
@@ -36,12 +36,7 @@ export default class Tags extends Vue {
     if (name === '') {
       window.alert('标签名不能为空');
     } else if (this.dataSource) {
-      if (this.dataSource.indexOf(name as string) >= 0) {
-        window.alert(`'${name}'已存在`);
-      } else {
-        this.$emit('update:dataSource',
-          [...this.dataSource, name]);
-      }
+      this.$emit('add', name);
     }
   }
 }
