@@ -8,7 +8,7 @@
           :class="{selected: selectedTags.indexOf((tag)) >= 0}"
           @click="toggle(tag)"
       >
-        {{ tag }}
+        {{ tag.name }}
       </li>
     </ul>
   </div>
