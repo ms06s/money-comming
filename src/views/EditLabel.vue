@@ -1,6 +1,9 @@
 <template>
   <Layout>
-    zaima?
+    <Icon name="left"></Icon>
+    <span>zaima?</span>
+    <Notes field-name="tag"
+           placeholder="请在这里输入标签名"></Notes>
   </Layout>
 </template>
 
@@ -8,8 +11,11 @@
 import Vue from 'vue';
 import {Component} from 'vue-property-decorator';
 import tagListModel from '@/models/tagListModel';
+import Notes from '@/components/Money/Notes.vue';
 
-@Component
+@Component({
+  components: {Notes}
+})
 export default class EditLabel extends Vue {
   created() {
     const id = this.$route.params.id;
@@ -19,7 +25,7 @@ export default class EditLabel extends Vue {
     if (tag) {
       console.log(tag);
     } else {
-      this.$router.replace('/404')
+      this.$router.replace('/404');
     }
   }
 
