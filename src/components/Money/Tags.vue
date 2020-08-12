@@ -44,7 +44,7 @@
 
 <style lang="scss" scoped>
   .tags {
-    background: rgba(249, 250, 250);
+    background: rgba(250, 251, 245);
     font-size: 14px;
     padding: 16px;
     flex-grow: 1;
