@@ -102,13 +102,7 @@
   }
   ::v-deep {
     .type-tabs-item {
-      background: #C4C4C4;
-      &.selected {
-        background: white;
-        &::after {
-          display: none;
-        }
-      }
+      background: rgba(210, 210, 210);
     }
     .interval-tabs-item {
       height: 48px;

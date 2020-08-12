@@ -38,12 +38,12 @@
 
 <style lang="scss" scoped>
   .tabs {
-    background: #C4C4C4;
+    background: rgba(210,210,210);
     display: flex;
     text-align: center;
     font-size: 24px;
     &-item {
-      width: 50%;
+      width:50%;
       height: 64px;
       display: flex;
       justify-content: center;
@@ -56,7 +56,7 @@
         left: 0;
         width: 100%;
         height: 4px;
-        background: #333;
+        background: #777;
       }
     }
   }

@@ -14,6 +14,11 @@
     font-family: $font-hei;
     font-size: 16px;
     line-height: 1.5;
-    background: #F5F5F5;
+  }
+
+  #app {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(250, 251, 245)
   }
 </style>

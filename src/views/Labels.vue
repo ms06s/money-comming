@@ -40,7 +40,8 @@
 </script>
 
 <style lang="scss" scoped>
-  .tags {
+
+.tags {
     background: white;
     font-size: 16px;
     padding-left: 16px;
@@ -59,7 +60,7 @@
     }
   }
   .createTag {
-    background: #767676;
+    background: rgba(204, 83, 92);
     color: white;
     border-radius: 4px;
     border: none;
